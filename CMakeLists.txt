@@ -53,11 +53,6 @@ else()
     # Error; with REQUIRED, pkg_search_module() will throw an error by it's own
 endif()
 
-# Search OpenSSL not working for brew ( OSX )
-if(APPLE)
-    include_directories("/usr/local/Cellar/openssl/1.0.2/include")
-endif()
-
 # Compile and run all unit tests
 foreach(testSrc ${TEST_SRCS})
         #Extract the filename without an extension (NAME_WE)
