@@ -12,7 +12,7 @@ before_install:
 - if [ $TRAVIS_OS_NAME == osx ]; then 
        brew update 
     && brew unlink cmake
-    && brew install openssl boost cmake
+    && brew install openssl cmake
     && brew link --force openssl
     ; 
   fi
