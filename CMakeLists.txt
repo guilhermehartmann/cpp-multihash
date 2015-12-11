@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.7)
+cmake_minimum_required(VERSION 3.3)
 
 project(cpp-multihash)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/lib")
