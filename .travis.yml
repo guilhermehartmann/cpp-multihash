@@ -4,6 +4,7 @@ before_install:
 - if [ $TRAVIS_OS_NAME == linux ]; then 
        sudo add-apt-repository ppa:george-edison55/cmake-3.x --yes
     && sudo apt-get update 
+    && apt-cache search cmake
     && sudo apt-get install libssl-dev libboost-all-dev cmake
     ; 
   fi
